@@ -97,7 +97,7 @@
                       <div class="col-lg-1 col-md-2 mr-4">
                           <!-- Logo -->
                           <div class="logo">
-                              <a href="index.html"><img src="{% static 'files/logo.png' %}" alt=""></a>
+                              <a href="{% url 'index' %}"><img src="{% static 'files/logo.png' %}" alt=""></a>
 
                           </div>
                       </div>
@@ -110,6 +110,11 @@
                                         <li><a href="#">Solutions</a></li>
                                           <li><a href="#resources">Resources</a></li>
                                           <li><a href="#">About</a></li>
+                                          {% if user.is_authenticated %}
+                                            <li>Hello, {{user.username}}</li>
+                                          {% else %}
+                                          <li><a href="#">Login</a></li>
+                                          {% endif %}
                                           <li class="d-block d-sm-none"><a href="#">Contact Us</a></li>
                                           <li class="d-block d-sm-none"><a href="#">Login</a></li>
                                       </ul>
@@ -125,7 +130,7 @@
                                     <ul id="navigation">
 
                                         <li><a href="#contact" class="text-left">Contact</a></li>
-                                        <li><a href="#contact" class="text-left">Contact</a></li>
+
                                     </ul>
                                 </nav>
                             </div>
@@ -418,22 +423,29 @@
     <div class="row">
       <div class="col-lg-4 col-md-6 icon-box">
         <h4 class="title"><a href="">News & Press Releases</a></h4>
-
+        {% for release in releases %}
         <div class="row">
-          <p class="description">New press Releases appear here.</p>
+          <p class="description">{{release.title}}</p>
         </div>
+        {% endfor %}
         <div class="row">
-          <p class="description">New press Releases appear here.</p>
+          <div class="col-lg-4">
+            <a href="#" class="btn btn-primary">See all press releases..</a>
+          </div>
         </div>
       </div>
 
       <div class="col-lg-4 col-md-6 icon-box">
         <h4 class="title"><a href="">Blog</a></h4>
+        {% for article in articles %}
         <div class="row">
-          <p class="description">Blog posts appear here.</p>
+          <p class="description">{{article.title}}</p>
         </div>
+        {% endfor %}
         <div class="row">
-          <p class="description">Blog posts appear here.</p>
+          <div class="col-lg-4">
+            <a href="#" class="btn btn-primary">See all blog posts..</a>
+          </div>
         </div>
       </div>
       <div class="col-lg-4 col-md-6 icon-box">

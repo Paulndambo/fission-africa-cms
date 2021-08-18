@@ -6,7 +6,17 @@ from . forms import ArticleForm, EditArticleForm, PressReleaseForm, EditPressRel
 from django.urls import reverse_lazy
 # Create your views here.
 def index(request):
-	return render(request, "home.html")
+	articles = Article.objects.all()[:3]
+	releases = PressRelease.objects.all()[:3]
+
+	print(releases)
+	print("Blog Articles: ", articles)
+
+	context = {
+		"articles": articles,
+		"releases": releases
+	}
+	return render(request, "home.html", context)
 
 def home(request):
 	users = User.objects.all().count()

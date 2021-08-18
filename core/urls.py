@@ -3,7 +3,8 @@ from . views import *
 from . import views
 
 urlpatterns = [
-	path('', views.home, name="home"),
+	path("", views.index, name="index"),
+	path('home/', views.home, name="home"),
 	#blog articles
 	path("articles/", ArticleListView.as_view(), name="articles"),
 	path("create-article/", CreateArticleView.as_view(), name="create-article"),
