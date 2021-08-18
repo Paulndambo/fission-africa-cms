@@ -5,6 +5,9 @@ from django.contrib.auth.models import User
 from . forms import ArticleForm, EditArticleForm, PressReleaseForm, EditPressReleaseForm
 from django.urls import reverse_lazy
 # Create your views here.
+def index(request):
+	return render(request, "home.html")
+
 def home(request):
 	users = User.objects.all().count()
 	articles = Article.objects.all().count()

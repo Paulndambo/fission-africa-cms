@@ -1,0 +1,584 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>FISSION</title>
+
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i,900" rel="stylesheet">
+        <!-- Vendor CSS Files -->
+    <link href="{% static 'assets/vendor/animate.css/animate.min.css '%}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/aos/aos.css '%}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css '%}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css '%}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css '%}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css '%}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css '%}" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="{% static 'assets/css/style.css '%}" rel="stylesheet">
+
+    <!--Multi Styles-->
+
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="{% static 'assets/multi/assets/vendor/animate.css/animate.min.css '%}" rel="stylesheet">
+    <link href="{% static 'assets/multi/assets/vendor/aos/aos.css '%}" rel="stylesheet">
+    <link href="{% static 'assets/multi/assets/vendor/bootstrap/css/bootstrap.min.css '%}" rel="stylesheet">
+    <link href="{% static 'assets/multi/assets/vendor/bootstrap-icons/bootstrap-icons.css '%}" rel="stylesheet">
+    <link href="{% static 'assets/multi/assets/vendor/boxicons/css/boxicons.min.css '%}" rel="stylesheet">
+    <link href="{% static 'assets/multi/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="{% static 'assets/multi/assets/vendor/remixicon/remixicon.css '%}" rel="stylesheet">
+    <link href="{% static 'assets/multi/assets/vendor/swiper/swiper-bundle.min.css '%}" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="{% static 'assets/multi/assets/css/style.css '%}" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="{% static 'files/assets/css/bootstrap.min.css '%}">
+  <link rel="stylesheet" href="{% static 'files/assets/css/owl.carousel.min.css '%}">
+  <link rel="stylesheet" href="{% static 'files/assets/css/flaticon.css '%}">
+  <link rel="stylesheet" href="{% static 'files/assets/css/price_rangs.css '%}">
+  <link rel="stylesheet" href="{% static 'files/assets/css/slicknav.css '%}">
+  <link rel="stylesheet" href="{% static 'files/assets/css/animate.min.css '%}">
+  <link rel="stylesheet" href="{% static 'files/assets/css/magnific-popup.css '%}">
+  <link rel="stylesheet" href="{% static 'files/assets/css/fontawesome-all.min.css '%}">
+  <link rel="stylesheet" href="{% static 'files/assets/css/themify-icons.css '%}">
+  <link rel="stylesheet" href="{% static 'files/assets/css/slick.css '%}">
+  <link rel="stylesheet" href="{% static 'files/assets/css/nice-select.css '%}">
+  <link rel="stylesheet" href="{% static 'files/assets/css/style.css '%}">
+
+    <style media="screen">
+      .contact-btn {
+          font-family: "Nunito", sans-serif;
+          text-transform: uppercase;
+          font-weight: 500;
+          font-size: 16px;
+          letter-spacing: 1px;
+          display: inline-block;
+          padding: 8px 28px;
+          border-radius: 25px;
+          transition: 0.5s;
+          margin-top: 10px;
+          border: 2px solid #fff;
+          color: black;
+          hover-color: yellow;
+      }
+      #contact-buton a:hover {
+          background-color: yellow;
+          }
+
+      #static-items {
+        display: flex;
+        justify-content: space-around;
+      }
+      #static-items p {
+        color: dark;
+        font-weight: bold;
+      }
+    </style>
+
+  </head>
+  <body style="background-color: whitesmoke;">
+
+      <!-- ======= Header ======= -->
+      <header>
+      <!-- Header Start -->
+     <div class="header-area header-transparrent">
+         <div class="headder-top header-sticky">
+              <div class="container">
+                  <div class="row align-items-center">
+                      <div class="col-lg-1 col-md-2 mr-4">
+                          <!-- Logo -->
+                          <div class="logo">
+                              <a href="index.html"><img src="files/logo.png" alt=""></a>
+
+                          </div>
+                      </div>
+                      <div class="col-lg-9 col-md-9">
+                          <div class="menu-wrapper">
+                              <!-- Main-menu -->
+                              <div class="main-menu">
+                                  <nav class="d-none d-lg-block">
+                                      <ul id="navigation">
+                                        <li><a href="#">Solutions</a></li>
+                                          <li><a href="#resources">Resources</a></li>
+                                          <li><a href="#">About</a></li>
+                                          <li class="d-block d-sm-none"><a href="#">Contact Us</a></li>
+                                      </ul>
+                                  </nav>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-1 col-md-2 mr-4">
+                        <div class="menu-wrapper">
+                            <!-- Main-menu -->
+                            <div class="main-menu">
+                                <nav class="d-none d-lg-block">
+                                    <ul id="navigation">
+
+                                        <li><a href="#contact" class="text-left">Contact</a></li>
+
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+
+                      </div>
+                      <!-- Mobile Menu -->
+                      <div class="col-12">
+                          <div class="mobile_menu d-block d-lg-none"></div>
+                      </div>
+                  </div>
+              </div>
+         </div>
+     </div>
+      <!-- Header End -->
+  </header>
+
+<!--
+      <header id="header" class="d-flex align-items-center" style="background-color: LightCyan;">
+        <div class="container d-flex align-items-center">
+
+          <div class="logo me-auto">
+            <!--<h1><a href="index.html">XYZ</a></h1>-->
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!--
+            <a href="index.html"><img src="assets/logo/b-logo.png" width="150px" height="50px" alt="" class="img-fluid"></a>
+          </div>
+
+          <nav id="navbar" class="navbar">
+            <ul>
+              <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+              <li><a class="nav-link scrollto" href="#about">Solutions</a></li>
+              <li><a class="nav-link scrollto" href="#resources">Resources</a></li>
+              <li><a class="nav-link scrollto" href="#portfolio">About</a></li>
+              <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          </nav><!-- .navbar -->
+<!--
+        </div>
+      </header>
+-->
+      <!-- End Header -->
+      <section id="hero">
+        <div class="hero-container">
+          <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+
+            <!--<ol class="carousel-indicators" id="hero-carousel-indicators"></ol>-->
+
+            <div class="carousel-inner" role="listbox">
+
+              <!-- Slide 1 -->
+              <div class="carousel-item active" style="background-image: url('assets/logo/img/cities/transport.jpeg');">
+                <div class="carousel-container">
+                  <div class="carousel-content container">
+                    <div class="carousel-caption d-block d-sm-none d-md-block">
+                      <!--<h3 class="text-white">Transportation Infrastructure</h3>-->
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 2 -->
+              <div class="carousel-item" style="background-image: url('assets/logo/img/cities/city2.jpg');">
+                <div class="carousel-container">
+                  <div class="carousel-content container">
+                    <div class="carousel-caption d-none d-md-block">
+                      <!--<h3 class="text-white">Smart Cities Infrastructure</h3>-->
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 3 -->
+              <div class="carousel-item" style="background-image: url('assets/logo/img/cities/housing.jpg');">
+                <div class="carousel-container">
+                  <div class="carousel-content container">
+                    <div class="carousel-caption d-none d-md-block">
+                      <!--<h3 class="text-white">Affordable Housing</h3>-->
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 4 -->
+              <div class="carousel-item" style="background-image: url('assets/logo/img/cities/ict.jpg');">
+                <div class="carousel-container">
+                  <div class="carousel-content container">
+                    <div class="carousel-caption d-none d-md-block">
+                      <!--<h3 class="text-white">Broadband ICT</h3>-->
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 5 -->
+              <div class="carousel-item" style="background-image: url('assets/logo/img/cities/energy.jpg');">
+                <div class="carousel-container">
+                  <div class="carousel-content container">
+                    <div class="carousel-caption d-none d-md-block">
+                      <!--<h3 class="text-white">Efficient Clean Energy</h3>-->
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+<!--
+            <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+              <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+            </a>
+
+-->
+
+          </div>
+        </div>
+
+      </section><!-- End Hero -->
+      <br>
+      <div class="container-fluid d-none d-lg-flex" id="static-items">
+      <p style="border-top: 3px solid #4682B4;">Transportation Infrastructure</p>
+      <p style="border-top: 3px solid #4682B4;">Smart Cities Infrastructure</p>
+      <p style="border-top: 3px solid #4682B4;">Affordable Housing</p>
+      <p style="border-top: 3px solid #4682B4;">Efficient Clean Energy</p>
+      <p style="border-top: 3px solid #4682B4;"> Broadband ICT</p>
+      </div>
+
+      <div class="container-fluid d-none d-md-flex d-lg-none d-xl-none" id="static-items">
+      <p style="border-top: 3px solid #4682B4;">Transportation Infrastructure</p>
+      <p style="border-top: 3px solid #4682B4;">Smart Cities Infrastructure</p>
+      <p style="border-top: 3px solid #4682B4;">Affordable Housing</p>
+      <p style="border-top: 3px solid #4682B4;">Efficient Clean Energy</p>
+      <p style="border-top: 3px solid #4682B4;"> Broadband ICT</p>
+      </div>
+
+      <div class="container-fluid d-none d-sm-block d-md-none" id="static-items">
+      <p style="border-top: 3px solid #4682B4;">Transportation Infrastructure</p>
+      <p style="border-top: 3px solid #4682B4;">Smart Cities Infrastructure</p>
+      <p style="border-top: 3px solid #4682B4;">Affordable Housing</p>
+      <p style="border-top: 3px solid #4682B4;">Efficient Clean Energy</p>
+      <p style="border-top: 3px solid #4682B4;"> Broadband ICT</p>
+      </div>
+
+      <div class="container-fluid d-block d-sm-none" id="static-texts">
+      <p style="border-top: 3px solid #4682B4;">Transportation Infrastructure</p>
+      <p style="border-top: 3px solid #4682B4;">Smart Cities Infrastructure</p>
+      <p style="border-top: 3px solid #4682B4;">Affordable Housing</p>
+      <p style="border-top: 3px solid #4682B4;">Efficient Clean Energy</p>
+      <p style="border-top: 3px solid #4682B4;"> Broadband ICT</p>
+      </div>
+
+      <br>
+      <div class="container-fluid"  style="border-bottom: 3px solid #4682B4;">
+        <h5 class="text-center">Bridging Africa’s infrastructure gap using blockchain-based tokenization </h5>
+      </div>
+
+      <!-- ======= Hero Section ======= -->
+
+      <!-- ======= Cta Section ======= -->
+      <section>
+          <div class="container-fluid py-5" style="background-color: #4682B4;">
+            <h5 class="text-center text-primary text-dark">Tokenizing Public Infrastructure </h5>
+            <br>
+            <p class="text-center text-white">XYZ is a financial technology company applying innovative approach to bridging infrastructure gap in Africa using blockchain. With the
+              continent requiring $170 billion a year for infrastructure, there is a need to attract private capital and blockchain-based tokenization
+              offers the best way possible to achieve that. We are building a blockchain technology specifically for infrastructure asset tokenization to
+              help close the continent’s infrastructure needs.</p>
+          </div>
+          <br><br>
+
+<div class="container-fluid">
+  <h5 class="text-center text-primary">Tokenization vs. Traditional Infrastructure Financing Instruments</h5>
+  <br>
+<div class="table-responsive">
+  <table class="table table-striped" style="color: teal;">
+                <thead>
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Asset Tokens</th>
+                    <th scope="col">Government/County Bonds</th>
+                    <th scope="col">Grants/Foreign Aid</th>
+                    <th scope="col">Direct Government Spending</th>
+                    <th scope="col">Central Bank Loans</th>
+                  </tr>
+                </thead>
+                <tbody>
+      <tr style="background-color: lightblue;">
+        <th scope="row" >Transparency</th>
+        <td>*****</td>
+        <td>***</td>
+        <td>*</td>
+        <td>*</td>
+        <td>**</td>
+      </tr>
+      <tr style="background-color: white;">
+        <th scope="row">PPP</th>
+        <td>*****</td>
+        <td>***</td>
+        <td>*</td>
+        <td>*</td>
+        <td>***</td>
+      </tr>
+      <tr style="background-color: lightblue;">
+        <th scope="row">Transaction Efficiency</th>
+        <td>*****</td>
+        <td>*</td>
+        <td>***</td>
+        <td>**</td>
+        <td>**</td>
+      </tr>
+      <tr style="background-color: white;">
+        <th scope="row">Liquidity</th>
+        <td>*****</td>
+        <td>**</td>
+        <td>*</td>
+        <td>*</td>
+        <td>*</td>
+      </tr>
+      <tr style="background-color: lightblue;">
+        <th scope="row">Investor Pool</th>
+        <td>*****</td>
+        <td>**</td>
+        <td>*</td>
+        <td>*</td>
+        <td>**</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+</section><!-- End Cta Section -->
+
+<section style="background-color: #4682B4;">
+  <div class="container-fluid">
+    <div class="section-title">
+      <h3>Why XYZ</h3>
+      <p class="text-white">Purpose-Built blockchain technology for infrastructure asset tokenization</p>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-6 icon-box">
+        <div class="icon"><i class="bi bi-chat-left-dots"></i></div>
+        <h4 class="title"><a href="#">End-to-end Solution</a></h4>
+        <p class="description text-white">Our token generation and management technology integrates everything required to create and
+          distribute tokens from start to finish,including KYC/AML, marketplace, cap table management, legal firms andothers.</p>
+      </div>
+      <div class="col-lg-4 col-md-6 icon-box">
+        <div class="icon"><i class="bi bi-chat-left-dots"></i></div>
+        <h4 class="title"><a href="">Purpose Built</a></h4>
+        <p class="description text-white">Our blockchain is specifically built to solve technical challenges around infrastructure asset
+          tokenization including governance, identity, compliance, confidentiality, and connection between the underlying asset and the token.</p>
+        </div>
+        <div class="col-lg-4 col-md-6 icon-box">
+          <div class="icon"><i class="bi bi-chat-left-dots"></i></div>
+          <h4 class="title"><a href="">Automated</a></h4>
+          <p class="description text-white">Rule enforcement including who can hold the tokens, how the tokens can be transferred, and other regulatory
+            requirements, is automated by the system.</p>
+
+          </div>
+      <div class="col-lg-4 col-md-6 icon-box">
+        <div class="icon"><i class="bi bi-chat-left-dots"></i></div>
+        <h4 class="title"><a href="">Variety of supported assets</a></h4>
+        <p class="description text-white">Our supports expanded range of infrastructure assets including telecommunication, transportation,
+          recreational, health, among others.</p>
+      </div>
+      <div class="col-lg-4 col-md-6 icon-box">
+        <div class="icon"><i class="bi bi-chat-left-dots"></i></div>
+        <h4 class="title"><a href="">Cross-jurisdiction</a></h4>
+        <p class="description text-white">Integrated cross-border regulations to widen investment pool and ensure seamless trade execution.</p>
+      </div>
+      <div class="col-lg-4 col-md-6 icon-box">
+        <div class="icon"><i class="bi bi-chat-left-dots"></i></div>
+        <h4 class="title"><a href="">Customize</a></h4>
+        <p class="description text-white">Tailor your token offering based on your requirements, jurisdictions and manage your
+          tokens and provide corporate actions.</p>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container-fluid">
+    <div class="section-title">
+      <h3><b>Updates</b></h3>
+      <p>Purpose-Built blockchain technology for infrastructure asset tokenization</p>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-6 icon-box">
+        <h4 class="title"><a href="">News & Press Releases</a></h4>
+
+        <div class="row">
+          <p class="description">New press Releases appear here.</p>
+        </div>
+        <div class="row">
+          <p class="description">New press Releases appear here.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 icon-box">
+        <h4 class="title"><a href="">Blog</a></h4>
+        <div class="row">
+          <p class="description">Blog posts appear here.</p>
+        </div>
+        <div class="row">
+          <p class="description">Blog posts appear here.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 icon-box">
+        <h4 class="title"><a href="">Social Media</a></h4>
+        <div class="row">
+          <p class="description">Social media posts appear here (mainly Tweets).</p>
+        </div>
+        <div class="row">
+          <p class="description">Social media posts appear here (mainly Tweets).
+        </p>
+        </div>
+    </div>
+    </div>
+  </div>
+</section>
+
+<section style="background-color: #4682B4; padding: 30px;">
+  <div class="contact-us">
+    <div class="container-fluid contact">
+      <div class="text-center" id="contact-button">
+        <p class="text-white">Driving infrastructure development using blockchain tokenization .</p>
+        <a class="contact-btn btn-warning" href="#">Contact Us</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!--wide screen footer-->
+
+<footer id="footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-3 col-md-6 footer-info">
+          <img src="files/logo.png" alt="">
+          <br>
+          <br>
+          <div class="social-links mt-3">
+            <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Solutions</h4>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Issuers</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Fission Marketplace</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Our Ecosystem</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">White Label</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Fission's Blockchain</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Resources</h4>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Blog</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">White Paper</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Resource Center</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Events</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>About Us</h4>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Our Story</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Careers</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy Policy</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of Service</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of Platform Use</a></li>
+
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="copyright">
+      &copy; Copyright <strong><span>Fission</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+      <!-- All the links in the footer should remain intact. -->
+      <!-- You can delete the links only if you purchased the pro version. -->
+      <!-- Licensing information: https://bootstrapmade.com/license/ -->
+      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/mamba-one-page-bootstrap-template-free/ -->
+      Designed by <a href="https://workfleektech.com/">Workfleek Technologies</a>
+    </div>
+  </div>
+</footer><!-- End Footer -->
+
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+      <!-- Vendor JS Files -->
+      <script src="assets/vendor/aos/aos.js"></script>
+      <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+      <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+      <script src="assets/vendor/php-email-form/validate.js"></script>
+      <script src="assets/vendor/purecounter/purecounter.js"></script>
+      <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+      <!-- Template Main JS File -->
+      <script src="assets/js/main.js"></script>
+
+
+
+      <!-- JS here -->
+
+		<!-- All JS Custom Plugins Link Here here -->
+      <script src="./files/assets/js/vendor/modernizr-3.5.0.min.js"></script>
+		<!-- Jquery, Popper, Bootstrap -->
+		<script src="./files/assets/js/vendor/jquery-1.12.4.min.js"></script>
+        <script src="./files/assets/js/popper.min.js"></script>
+        <script src="./files/assets/js/bootstrap.min.js"></script>
+	    <!-- Jquery Mobile Menu -->
+        <script src="./files/assets/js/jquery.slicknav.min.js"></script>
+
+		<!-- Jquery Slick , Owl-Carousel Plugins -->
+        <script src="./files/assets/js/owl.carousel.min.js"></script>
+        <script src="./files/assets/js/slick.min.js"></script>
+        <script src="./files/assets/js/price_rangs.js"></script>
+
+		<!-- One Page, Animated-HeadLin -->
+        <script src="./files/assets/js/wow.min.js"></script>
+		<script src="./files/assets/js/animated.headline.js"></script>
+        <script src="./files/assets/js/jquery.magnific-popup.js"></script>
+
+		<!-- Scrollup, nice-select, sticky -->
+        <script src="./files/assets/js/jquery.scrollUp.min.js"></script>
+        <script src="./files/assets/js/jquery.nice-select.min.js"></script>
+		<script src="./files/assets/js/jquery.sticky.js"></script>
+
+        <!-- contact js -->
+        <script src="./files/assets/js/contact.js"></script>
+        <script src="./files/assets/js/jquery.form.js"></script>
+        <script src="./files/assets/js/jquery.validate.min.js"></script>
+        <script src="./files/assets/js/mail-script.js"></script>
+        <script src="./files/assets/js/jquery.ajaxchimp.min.js"></script>
+
+		<!-- Jquery Plugins, main Jquery -->
+        <script src="./files/assets/js/plugins.js"></script>
+        <script src="./files/assets/js/main.js"></script>
+  </body>
+</html>
