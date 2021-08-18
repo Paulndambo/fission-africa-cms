@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+    <section id="main-content">
+      <section class="wrapper">
+        <div class="row">
+          <div class="col-lg-12">
+            <h3 class="page-header"><i class=""></i> Press Release</h3>
+            <ol class="breadcrumb">
+              <li><i class="fa fa-home"></i><a href="#">Press Releases List</a></li>
+              <li><i class="fa fa-pencil"></i><a href="#">Update Press Release</a></li>
+        
+            </ol>
+          </div>
+        </div>
+        <div class="row">
+<section>
+  <div id="profile" class="tab-pane">
+    <section class="panel">
+      <div class="panel-body bio-graph-info">
+        <h1>{{press_release.title}}</h1>
+        <div class="row">
+          {{press_release.body | safe}}
+        </div>
+      </div>
+    </section>
+  </div>
+</section>
+
+  </section>
+</section>
+
+{% endblock content %}
