@@ -97,7 +97,7 @@
                       <div class="col-lg-1 col-md-2 mr-4">
                           <!-- Logo -->
                           <div class="logo">
-                              <a href="index.html"><img src="files/logo.png" alt=""></a>
+                              <a href="index.html"><img src="{% static 'files/logo.png' %}" alt=""></a>
 
                           </div>
                       </div>
@@ -111,6 +111,7 @@
                                           <li><a href="#resources">Resources</a></li>
                                           <li><a href="#">About</a></li>
                                           <li class="d-block d-sm-none"><a href="#">Contact Us</a></li>
+                                          <li class="d-block d-sm-none"><a href="#">Login</a></li>
                                       </ul>
                                   </nav>
                               </div>
@@ -124,7 +125,7 @@
                                     <ul id="navigation">
 
                                         <li><a href="#contact" class="text-left">Contact</a></li>
-
+                                        <li><a href="#contact" class="text-left">Contact</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -177,7 +178,7 @@
             <div class="carousel-inner" role="listbox">
 
               <!-- Slide 1 -->
-              <div class="carousel-item active" style="background-image: url('assets/logo/img/cities/transport.jpeg');">
+              <div class="carousel-item active" style="background-image: url('{% static 'assets/logo/img/cities/transport.jpeg' %}');">
                 <div class="carousel-container">
                   <div class="carousel-content container">
                     <div class="carousel-caption d-block d-sm-none d-md-block">
@@ -188,7 +189,7 @@
               </div>
 
               <!-- Slide 2 -->
-              <div class="carousel-item" style="background-image: url('assets/logo/img/cities/city2.jpg');">
+              <div class="carousel-item" style="background-image: url('{% static 'assets/logo/img/cities/city2.jpg' %}');">
                 <div class="carousel-container">
                   <div class="carousel-content container">
                     <div class="carousel-caption d-none d-md-block">
@@ -199,7 +200,7 @@
               </div>
 
               <!-- Slide 3 -->
-              <div class="carousel-item" style="background-image: url('assets/logo/img/cities/housing.jpg');">
+              <div class="carousel-item" style="background-image: url('{% static 'assets/logo/img/cities/housing.jpg' %}');">
                 <div class="carousel-container">
                   <div class="carousel-content container">
                     <div class="carousel-caption d-none d-md-block">
@@ -210,7 +211,7 @@
               </div>
 
               <!-- Slide 4 -->
-              <div class="carousel-item" style="background-image: url('assets/logo/img/cities/ict.jpg');">
+              <div class="carousel-item" style="background-image: url('{% static 'assets/logo/img/cities/ict.jpg' %}');">
                 <div class="carousel-container">
                   <div class="carousel-content container">
                     <div class="carousel-caption d-none d-md-block">
@@ -221,7 +222,7 @@
               </div>
 
               <!-- Slide 5 -->
-              <div class="carousel-item" style="background-image: url('assets/logo/img/cities/energy.jpg');">
+              <div class="carousel-item" style="background-image: url('{% static 'assets/logo/img/cities/energy.jpg' %}');">
                 <div class="carousel-container">
                   <div class="carousel-content container">
                     <div class="carousel-caption d-none d-md-block">
@@ -531,54 +532,54 @@
 <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
       <!-- Vendor JS Files -->
-      <script src="assets/vendor/aos/aos.js"></script>
-      <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-      <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-      <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-      <script src="assets/vendor/php-email-form/validate.js"></script>
-      <script src="assets/vendor/purecounter/purecounter.js"></script>
-      <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+      <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+      <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+      <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+      <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+      <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+      <script src="{% static 'assets/vendor/purecounter/purecounter.js' %}"></script>
+      <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
 
       <!-- Template Main JS File -->
-      <script src="assets/js/main.js"></script>
+      <script src="{% static 'assets/js/main.js' %}"></script>
 
 
 
       <!-- JS here -->
 
 		<!-- All JS Custom Plugins Link Here here -->
-      <script src="./files/assets/js/vendor/modernizr-3.5.0.min.js"></script>
+      <script src="{% static 'files/assets/js/vendor/modernizr-3.5.0.min.js' %}"></script>
 		<!-- Jquery, Popper, Bootstrap -->
-		<script src="./files/assets/js/vendor/jquery-1.12.4.min.js"></script>
-        <script src="./files/assets/js/popper.min.js"></script>
-        <script src="./files/assets/js/bootstrap.min.js"></script>
+		<script src="{% static 'files/assets/js/vendor/jquery-1.12.4.min.js' %}"></script>
+        <script src="{% static 'files/assets/js/popper.min.js' %}"></script>
+        <script src="{% static 'files/assets/js/bootstrap.min.js' %}"></script>
 	    <!-- Jquery Mobile Menu -->
-        <script src="./files/assets/js/jquery.slicknav.min.js"></script>
+        <script src="{% static 'files/assets/js/jquery.slicknav.min.js' %}"></script>
 
 		<!-- Jquery Slick , Owl-Carousel Plugins -->
-        <script src="./files/assets/js/owl.carousel.min.js"></script>
-        <script src="./files/assets/js/slick.min.js"></script>
-        <script src="./files/assets/js/price_rangs.js"></script>
+        <script src="{% static 'files/assets/js/owl.carousel.min.js' %}"></script>
+        <script src="{% static 'files/assets/js/slick.min.js' %}"></script>
+        <script src="{% static 'files/assets/js/price_rangs.js' %}"></script>
 
 		<!-- One Page, Animated-HeadLin -->
-        <script src="./files/assets/js/wow.min.js"></script>
-		<script src="./files/assets/js/animated.headline.js"></script>
-        <script src="./files/assets/js/jquery.magnific-popup.js"></script>
+        <script src="{% static 'files/assets/js/wow.min.js' %}"></script>
+		<script src="{% static 'files/assets/js/animated.headline.js' %}"></script>
+        <script src="{% static 'files/assets/js/jquery.magnific-popup.js' %}"></script>
 
 		<!-- Scrollup, nice-select, sticky -->
-        <script src="./files/assets/js/jquery.scrollUp.min.js"></script>
-        <script src="./files/assets/js/jquery.nice-select.min.js"></script>
-		<script src="./files/assets/js/jquery.sticky.js"></script>
+        <script src="{% static 'files/assets/js/jquery.scrollUp.min.js' %}"></script>
+        <script src="{% static 'files/assets/js/jquery.nice-select.min.js' %}"></script>
+		<script src="{% static 'files/assets/js/jquery.sticky.js' %}"></script>
 
         <!-- contact js -->
-        <script src="./files/assets/js/contact.js"></script>
-        <script src="./files/assets/js/jquery.form.js"></script>
-        <script src="./files/assets/js/jquery.validate.min.js"></script>
-        <script src="./files/assets/js/mail-script.js"></script>
-        <script src="./files/assets/js/jquery.ajaxchimp.min.js"></script>
+        <script src="{% static 'files/assets/js/contact.js' %}"></script>
+        <script src="{% static 'files/assets/js/jquery.form.js' %}"></script>
+        <script src="{% static 'files/assets/js/jquery.validate.min.js' %}"></script>
+        <script src="{% static 'files/assets/js/mail-script.js' %}"></script>
+        <script src="{% static 'files/assets/js/jquery.ajaxchimp.min.js' %}"></script>
 
 		<!-- Jquery Plugins, main Jquery -->
-        <script src="./files/assets/js/plugins.js"></script>
-        <script src="./files/assets/js/main.js"></script>
+        <script src="{% static 'files/assets/js/plugins.js' %}"></script>
+        <script src="{% static 'files/assets/js/main.js' %}"></script>
   </body>
 </html>
